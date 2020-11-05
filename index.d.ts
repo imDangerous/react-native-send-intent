@@ -72,6 +72,7 @@ declare namespace SendIntentAndroid {
   const openAllEmailApp: () => void
   const TEXT_PLAIN: unique symbol
   const TEXT_HTML: unique symbol
+  const openAppWithUri(intentUri: string, extras?: { [index: string]: string }) => Promise<boolean>
 }
 
 export = SendIntentAndroid
